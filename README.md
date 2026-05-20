@@ -27,8 +27,7 @@ pot_hole_detection/
 ### 1. Clone and configure environment
 
 ```bash
-conda env create -f environment.yml
-conda activate pothole_detection_env
+uv sync
 ```
 
 ### 2. Set environment variables
@@ -41,7 +40,7 @@ cp .env.example .env
 ### 3. Download the dataset locally
 
 ```bash
-python download_data.py
+python scripts/download_data.py
 ```
 
 This pulls images and labels from Azure Blob Storage into `data/`.

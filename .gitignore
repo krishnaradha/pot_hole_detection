@@ -9,7 +9,7 @@ __pycache__/
 *.pyd
 .Python
 
-# Conda / virtual environments
+# Virtual environments
 my_env/
 venv/
 env/
