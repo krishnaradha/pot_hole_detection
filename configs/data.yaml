@@ -1,0 +1,6 @@
+# data.yaml for YOLOv8 single-class pothole detection
+train: /mnt/azureml/cr/j/a7848903150a48f19cf6e31d02c7c283/cap/data-capability/wd/INPUT_data/images/train
+val: /mnt/azureml/cr/j/a7848903150a48f19cf6e31d02c7c283/cap/data-capability/wd/INPUT_data/images/train
+
+nc: 1
+names: ["pothole"]
