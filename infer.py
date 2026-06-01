@@ -9,14 +9,15 @@ DEFAULT_OUTPUT = "outputs/inference"
 
 
 def find_latest_model(search_dir: str = "outputs") -> str:
-    """Return the most recently modified best.pt under search_dir."""
+    """Return the most recently modified best_*.pt in search_dir (top-level copies)."""
+    root = Path(search_dir)
     candidates = sorted(
-        Path(search_dir).rglob("best.pt"),
+        root.glob("best_*.pt"),
         key=lambda p: p.stat().st_mtime,
         reverse=True,
     )
     if not candidates:
-        raise FileNotFoundError(f"No best.pt found under '{search_dir}/'")
+        raise FileNotFoundError(f"No best_*.pt found in '{search_dir}/'")
     return str(candidates[0])
 
 
