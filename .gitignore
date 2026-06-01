@@ -18,8 +18,7 @@ env/
 
 # Data & datasets (download via download_data.py)
 
-# Model weights & training outputs
-outputs/
+# Model weights
 runs/
 *.pt
 *.pth

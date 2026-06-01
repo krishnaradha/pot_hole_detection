@@ -1,6 +1,8 @@
 import argparse
 import os
+import shutil
 import yaml
+from datetime import datetime
 
 from ultralytics import YOLO
 
@@ -68,6 +70,8 @@ def main():
     try:
         data_yaml_path = resolve_data_config(args.data)
 
+        run_name = f"yolo_training_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+
         model = YOLO("yolov8n.pt")
         model.train(
             data=data_yaml_path,
@@ -75,14 +79,15 @@ def main():
             imgsz=args.imgsz,
             batch=args.batch,
             project="outputs",
-            name="yolo_training",
-            exist_ok=True,
+            name=run_name,
+            exist_ok=False,
         )
 
-        best_model_path = os.path.join("outputs", "yolo_training", "weights", "best.pt")
+        best_model_path = os.path.join("outputs", run_name, "weights", "best.pt")
         if os.path.exists(best_model_path):
-            os.rename(best_model_path, "outputs/best.pt")
-            print("Best model saved to outputs/best.pt")
+            dest = f"outputs/best_{run_name}.pt"
+            shutil.copy2(best_model_path, dest)
+            print(f"Best model saved to {dest}")
 
     finally:
         os.chdir(original_dir)
