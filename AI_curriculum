@@ -1,0 +1,358 @@
+Advanced Agentic AI Engineer Program
+Duration: 65 Days Learning Style: 70% Hands-on, 30% Technical Theory Primary Environment: VS Code + GitHub Expectation: Every concept is implemented as working code
+
+🔹 Mandatory Prerequisites
+Students must already know:
+Python fundamentals
+functions, classes, error handling
+VS Code
+terminal, extensions, debugging
+GitHub
+repositories, commits, README, branching
+No ML, DL, or math background required.
+
+🔹 Program Philosophy (Important)
+Every module introduces a new agent paradigm
+Every module introduces new tools / frameworks
+Every module ends with a production-style project
+Code-first, not prompt-first
+GitHub is mandatory for all submissions
+
+🧩 MODULE 1: LLM Application Foundations
+Days 1–8
+Why this module exists
+Before agents, students must learn to build real LLM-powered applications, not chat demos.
+
+Tech Stack Introduced
+Python
+OpenAI / OpenRouter compatible APIs
+Prompt engineering (structured)
+JSON schema outputs
+VS Code debugging
+
+What Students Build
+Deterministic, controllable LLM applications.
+
+Day-wise Breakdown
+Day 1
+LLMs as APIs, not chatbots
+Request/response lifecycle
+Temperature, tokens, cost control
+Day 2
+Prompt templates
+System vs user vs developer prompts
+Day 3
+Structured outputs using JSON
+Output validation
+Day 4
+Error handling for LLM calls
+Timeouts and retries
+Day 5
+Logging responses
+Prompt versioning
+Day 6
+Mini app: text analyzer
+Day 7
+Performance testing
+Day 8
+GitHub submission
+
+🛠 Module 1 Project
+Project: LLM Utility Service
+A Python service that:
+Accepts structured input
+Returns validated JSON output
+Logs all responses
+
+🧩 MODULE 2: LangChain & Tool-Driven Agents
+Days 9–18
+Why this module exists
+Teach agents that act, not just respond.
+
+Tech Stack Introduced
+LangChain
+AgentExecutor
+ReAct pattern
+Tool schemas
+File-based tools
+
+What Students Build
+Tool-using autonomous agents.
+
+Day-wise Breakdown
+Day 9
+LangChain architecture
+Chains vs Agents
+Day 10
+Tools in LangChain
+Tool definitions and schemas
+Day 11
+ReAct reasoning loop
+Day 12
+AgentExecutor internals
+Day 13
+Multi-tool agents
+Day 14
+Tool failure handling
+Day 15
+Observability and verbose tracing
+Day 16
+Agent testing strategies
+Day 17
+Optimization & cleanup
+Day 18
+Project submission
+
+🛠 Module 2 Project
+Project: Task Automation Agent
+Agent that:
+Selects tools dynamically
+Executes multi-step tasks
+Logs decisions
+
+🧩 MODULE 3: Stateful Agents with LangGraph
+Days 19–29
+Why this module exists
+Real agents need state, memory, and control flow.
+
+Tech Stack Introduced
+LangGraph
+TypedDict state management
+Conditional routing
+Checkpointing
+File & vector memory concepts
+
+What Students Build
+Stateful, resumable agents.
+
+Day-wise Breakdown
+Day 19
+Stateless vs stateful agents
+Day 20
+LangGraph fundamentals
+Day 21
+Graph nodes & edges
+Day 22
+State schema design
+Day 23
+Conditional execution
+Day 24
+Retry loops & fallbacks
+Day 25
+Long-term memory integration
+Day 26
+Observability & tracing
+Day 27
+Testing graph execution
+Day 28
+Optimization
+Day 29
+Project delivery
+
+🛠 Module 3 Project
+Project: Stateful Research Agent
+Agent that:
+Maintains execution state
+Remembers previous actions
+Can resume after failure
+
+🧩 MODULE 4: Planning, Decomposition & Reasoning Architectures
+Days 30–40
+Why this module exists
+Agents must think before acting.
+
+Tech Stack Introduced
+Planner–Executor pattern
+Task graphs
+Hierarchical planning
+Evaluation loops
+
+What Students Build
+Planning-aware intelligent agents.
+
+Day-wise Breakdown
+Day 30
+Why naive agents fail
+Day 31
+Planner agent design
+Day 32
+Task decomposition algorithms
+Day 33
+Executor agents
+Day 34
+Plan validation
+Day 35
+Replanning strategies
+Day 36
+Partial completion handling
+Day 37
+Execution scoring
+Day 38
+Debugging planners
+Day 39
+Integration testing
+Day 40
+Project submission
+
+🛠 Module 4 Project
+Project: AI Project Planner
+Agent that:
+Generates execution plans
+Executes step-by-step
+Replans on failure
+
+🧩 MODULE 5: Multi-Agent Systems with CrewAI
+Days 41–52
+Why this module exists
+Most real-world systems use multiple cooperating agents.
+
+Tech Stack Introduced
+CrewAI
+Role-based agents
+Task delegation
+Inter-agent communication
+Evaluation agents
+
+What Students Build
+AI teams, not single bots.
+
+Day-wise Breakdown
+Day 41
+Multi-agent system design
+Day 42
+CrewAI fundamentals
+Day 43
+Defining roles and responsibilities
+Day 44
+Task orchestration
+Day 45
+Delegation logic
+Day 46
+Conflict resolution
+Day 47
+Reviewer / evaluator agents
+Day 48
+Performance tuning
+Day 49
+Failure isolation
+Day 50
+Full system testing
+Day 51
+Optimization
+Day 52
+Project submission
+
+🛠 Module 5 Project
+Project: AI Operations Team
+System with:
+Manager agent
+Worker agents
+Reviewer agent
+
+🧩 MODULE 6: Production-Grade Agent Systems
+Days 53–65
+Why this module exists
+Move from demos to deployable systems.
+
+Tech Stack Introduced
+FastAPI
+Background jobs
+Config-driven agents
+Logging & monitoring
+Deployment-ready structure
+
+Capstone Options
+AI Developer Assistant
+AI Customer Support Agent
+AI Operations Monitoring Agent
+AI Business Intelligence Agent
+
+Capstone Requirements
+Uses at least two agent frameworks
+Includes memory, tools, and planning
+Modular codebase
+Professional README
+Architecture diagram
+
+🎯 Final Outcomes
+Students will be able to:
+Build real-world agentic systems
+Use LangChain, LangGraph, CrewAI, FastAPI
+Architect complex AI workflows
+Maintain professional GitHub portfolios
+Explain agent design in interviews confidently
+
+
+WEEK 1–2: Python for AI & Automation
+Goal: Learn just enough Python to read, clean, and prepare data for AI.
+Day 1: Why Python dominates AI — overview of AI landscape + Colab setup
+Day 2: Python syntax, loops, and conditional logic — quick coding warm-up
+Day 3: Lists, tuples, and dictionaries — how AI stores and manipulates data
+Day 4: Functions and lambdas — reusable logic for model steps
+Day 5: Classes & OOP basics — modeling “objects” like Data, Model, etc.
+Day 6: Reading/writing files (CSV, JSON) — intro to data pipelines
+Day 7: Working with APIs using requests — fetching real-world data (e.g., weather or quotes)
+Day 8: Virtual environments & dependency control — lightweight project hygiene
+Day 9: GitHub essentials — pushing notebooks and collaborating
+Day 10: Mini Project: Scrape website data → save as CSV → upload to GitHub
+WEEK 3: Data Science & Visualization
+Goal: Understand how AI learns from structured data.
+Day 11: What is data science and how it fuels AI systems
+Day 12: Intro to Numpy — arrays, vectors, and numerical power
+Day 13: Pandas basics — loading and exploring CSV data
+Day 14: Cleaning data — handle missing values, duplicates, and wrong types
+Day 15: Descriptive statistics — spotting trends and correlations
+Day 16: Visuals with Matplotlib — plotting patterns AI would “see”
+Day 17: Seaborn & Plotly — prettier, interactive charts
+Day 18: EDA hands-on: Netflix or IPL dataset exploration
+Day 19: Creating an EDA report + basic insights write-up
+Day 20: Connecting EDA → ML: how clean data improves predictions
+WEEK 4: Machine Learning Foundations
+Goal: Learn how machines actually “learn” using scikit-learn.
+Day 21: What is Machine Learning — intuition through real examples
+Day 22: Supervised learning — regression vs classification explained
+Day 23: Data splitting — training, testing, and model validation
+Day 24: Preprocessing — scaling, encoding, and cleaning for ML
+
+Day 25: Linear & Logistic Regression — first real models
+Day 26: Decision Trees & Random Forest — “how machines make choices”
+Day 27: Evaluating models — accuracy, F1, confusion matrix
+Day 28: Build & test: predict student marks or housing prices
+Day 29: Visualizing feature importance & results
+Day 30: Recap + ML in real life (credit scoring, spam filters, etc.)
+WEEK 5–6: Deep Learning with TensorFlow or PyTorch
+Goal: See how neural networks power modern AI.
+Day 31: What is a Neural Network — human brain analogy + visual demo
+Day 32: Layers, neurons, activations, and loss — simplified math intuition
+Day 33: TensorFlow setup & Sequential API walkthrough
+Day 34: Build your first NN: predict handwritten digits
+Day 35: CNNs for images — how AI “sees” pictures
+Day 36: Cat vs Dog demo — step-by-step training in Colab
+Day 37: Overfitting & regularization — why models fail
+Day 38: Visualize training with TensorBoard
+Day 39: Using GPUs in Colab for faster deep learning
+Day 40: Mini Project: Image classifier + accuracy comparison
+WEEK 7–8: Transformers, LLMs & Hugging Face
+Goal: Explore how ChatGPT-like AI systems work.
+Day 41: Evolution from ML → Deep Learning → Transformers
+Day 42: How attention & embeddings work (visual demo only)
+Day 43: Hugging Face intro — using pre-trained models without coding from scratch
+Day 44: Sentiment analysis with DistilBERT — infer emotions from text
+Day 45: Fine-tuning demo — customizing BERT on small dataset
+Day 46: Hugging Face datasets library — using public data for quick tests
+Day 47: Upload your model to Hugging Face Hub
+Day 48: Mini Project: Q&A or Sentiment chatbot with HF
+Day 49: Real-world LLMs — OpenAI, Anthropic, Perplexity use cases
+Day 50: Discussion: model bias, responsible AI, and explainability
+WEEK 9: LangChain, Vector DBs & RAG
+Goal: Understand how AI retrieves knowledge and builds memory.
+Day 51: What is prompt engineering — talking effectively to LLMs
+Day 52: LangChain basics — Chains, Tools, and Agents
+Day 53: What is RAG — how AI “reads documents” to answer questions
+Day 54: Vector databases — how FAISS & Chroma store context
+Day 55: Document loaders — PDFs, CSVs, websites
+Day 56: Build your own “Chat with PDF” pipeline
+Day 57: Connect LLM + FAISS + LangChain for simple chatbot
+Day 58: Improve retrieval & responses quality
+Day 59: Mini Project: PDF Q&A chatbot
+Day 60: Capstone showcase — presentation, reflection, and next steps
