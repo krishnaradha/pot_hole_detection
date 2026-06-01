@@ -20,6 +20,7 @@ env/
 
 # Model weights & training outputs
 outputs/
+runs/
 *.pt
 *.pth
 
