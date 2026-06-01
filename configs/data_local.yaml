@@ -1,0 +1,6 @@
+# Local training config — paths relative to project root
+train: ../data/images/train
+val: ../data/images/train
+
+nc: 1
+names: ["pothole"]
