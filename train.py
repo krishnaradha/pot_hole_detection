@@ -59,7 +59,7 @@ def main():
         default=DEFAULT_DATA_CONFIG,
         help="Path to YOLO data config YAML (default: configs/data_local.yaml)",
     )
-    parser.add_argument("--epochs", type=int, default=50)
+    parser.add_argument("--epochs", type=int, default=5)
     parser.add_argument("--imgsz", type=int, default=640)
     parser.add_argument("--batch", type=int, default=8)
     args = parser.parse_args()
@@ -71,6 +71,9 @@ def main():
         data_yaml_path = resolve_data_config(args.data)
 
         run_name = f"yolo_training_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+        outputs_dir = os.path.join(original_dir, "outputs")
+        best_src = os.path.join(outputs_dir, run_name, "weights", "best.pt")
+        best_dest = os.path.join(outputs_dir, f"best_{run_name}.pt")
 
         model = YOLO("yolov8n.pt")
         model.train(
@@ -78,16 +81,14 @@ def main():
             epochs=args.epochs,
             imgsz=args.imgsz,
             batch=args.batch,
-            project="outputs",
+            project=outputs_dir,
             name=run_name,
             exist_ok=False,
         )
 
-        best_model_path = os.path.join("outputs", run_name, "weights", "best.pt")
-        if os.path.exists(best_model_path):
-            dest = f"outputs/best_{run_name}.pt"
-            shutil.copy2(best_model_path, dest)
-            print(f"Best model saved to {dest}")
+        if os.path.exists(best_src):
+            shutil.copy2(best_src, best_dest)
+            print(f"Best model saved to {best_dest}")
 
     finally:
         os.chdir(original_dir)
